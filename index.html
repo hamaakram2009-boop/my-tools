@@ -15,11 +15,13 @@
 <button class="tool" onclick="show('image')"><span class="ico">🖼️</span><b>کەمکردنەوەی قەبارەی وێنە</b><small>وێنەکەت لەسەر ئامێرەکەت بچووک بکەرەوە</small></button>
 <button class="tool" onclick="show('pdf')"><span class="ico">📄</span><b>ئامرازەکانی PDF</b><small>چاپکردن و پاشەکەوتکردن وەک PDF</small></button>
 <button class="tool" onclick="show('links')"><span class="ico">🔗</span><b>لینکەکانم</b><small>لینکە گرنگەکانت کۆبکەرەوە</small></button>
+<button class="tool" onclick="show('files')"><span class="ico">📁</span><b>بەڕێوەبردنی فایلەکان</b><small>فایلەکانت هەڵبژێرە، ببینە و دایانبگرە</small></button>
 </div>
 <section id="qr" class="panel"><h2>▦ دروستکردنی QR</h2><label for="qrtext">لینک یان دەق بنووسە</label><input id="qrtext" placeholder="https://example.com"><button onclick="makeQR()">دروستکردنی QR</button><div id="qrout"></div><p class="hint">بۆ دروستکردنی QR پێویستە ئینتەرنێتت هەبێت. ناوەڕۆکی نووسراو بۆ خزمەتگوزاری QR دەنێردرێت.</p></section>
 <section id="notes" class="panel"><h2>📝 تێبینییەکان</h2><label for="notetext">تێبینیی نوێ</label><textarea id="notetext" placeholder="تێبینییەکەت لێرە بنووسە..."></textarea><button onclick="addNote()">پاشەکەوتکردن</button><div id="notelist"></div><p class="hint">تێبینییەکان تەنها لە هەمان وێبگەڕ و ئامێرەکەتدا پاشەکەوت دەبن.</p></section>
 <section id="image" class="panel"><h2>🖼️ ئامرازەکانی وێنە</h2><label for="imgfile">وێنە هەڵبژێرە</label><input id="imgfile" type="file" accept="image/*" onchange="loadImageTool()"><div id="imgcontrols" class="hidden"><label for="imgwidth">پانی (px)</label><input id="imgwidth" type="number" min="1" max="6000" placeholder="پانی بە پیکسڵ"><label for="imgheight">بەرزی (px)</label><input id="imgheight" type="number" min="1" max="6000" placeholder="بەرزی بە پیکسڵ"><label for="imgformat">جۆری فایل</label><select id="imgformat"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WEBP</option></select><label for="quality">کوالێتی (بۆ JPG و WEBP)</label><select id="quality"><option value="0.9">باشترین (90%)</option><option value="0.8" selected>باش (80%)</option><option value="0.6">مامناوەند (60%)</option><option value="0.4">کەم (40%)</option></select><div class="row"><button type="button" onclick="processImage()">گۆڕین و ئامادەکردنی وێنە</button></div></div><div id="imgresult"></div><p class="hint">وێنەکە لەسەر ئامێرەکەت پرۆسێس دەکرێت؛ بۆ هیچ شوێنێک نانێردرێت. قەبارەی بەتاڵ واتە قەبارەی ڕەسەن دەپارێزرێت.</p></section>
 <section id="links" class="panel"><h2>🔗 بەڕێوەبردنی لینکەکانم</h2><label for="linkname">ناوی لینک</label><input id="linkname" placeholder="وەک: Instagram"><label for="linkurl">بەستەر (URL)</label><input id="linkurl" type="url" inputmode="url" placeholder="https://example.com"><button onclick="addLink()">زیادکردنی لینک</button><div id="linklist"></div><p class="hint">لینکەکان تەنها لە هەمان وێبگەڕ و ئامێرەکەتدا پاشەکەوت دەبن. بۆ هاوبەشکردنیان، لینکەکان کۆپی بکە و بنێرە.</p></section>
+<section id="files" class="panel"><h2>📁 بەڕێوەبردنی فایلەکان</h2><label for="managerfiles">فایلەکان هەڵبژێرە</label><input id="managerfiles" type="file" multiple onchange="loadManagedFiles()"><p class="hint">فایلەکان لەسەر ئامێرەکەت دەمێننەوە و بۆ هیچ سێرڤەرێک نانێردرێن. ئەم لیستە تەنها تا کاتی داخستنی پەڕەکە دەمێنێتەوە؛ بۆ پاشەکەوتی درێژخایەن فایلەکان لە Files ـی مۆبایلەکەت بەکاربهێنە.</p><div id="managedfilelist"></div></section>
 <section id="pdf" class="panel"><h2>📄 ئامرازەکانی PDF</h2><label for="pdffiles">یەک یان چەند وێنە هەڵبژێرە</label><input id="pdffiles" type="file" accept="image/*" multiple><button onclick="imagesToPDF()">گۆڕینی وێنەکان بۆ PDF</button><div id="pdfprint"></div><p class="hint">دوای ئامادەبوونی پێشبینین، دوگمەی چاپکردن دابگرە. لە iPhone لە پەڕەی چاپ، وێنەی پێشبینین بە دوو پەنجە فراوان بکە، پاشان Share و Save to Files هەڵبژێرە.</p><hr style="border:0;border-top:1px solid var(--line);margin:18px 0"><p>هەروەها دەتوانیت خودی ئەم پەڕەیە بکەیتە PDF:</p><button class="secondary" onclick="window.print()">چاپکردن / پاشەکەوتکردنی ئەم پەڕەیە وەک PDF</button></section>
 </main><footer>ئامرازەکانی من · وەشانی یەکەم</footer>
 <script>
@@ -47,6 +49,25 @@ function processImage(){
  if(w<1||h<1||w>6000||h>6000){alert('پانی و بەرزی دەبێت لە 1 تا 6000 پیکسڵ بن');return}
  const format=document.getElementById('imgformat').value,q=Number(document.getElementById('quality').value),canvas=document.createElement('canvas');canvas.width=w;canvas.height=h;canvas.getContext('2d').drawImage(selectedImageObject,0,0,w,h);
  canvas.toBlob(blob=>{if(!blob){alert('گۆڕینی وێنە سەرکەوتوو نەبوو');return}const url=URL.createObjectURL(blob),ext=format==='image/png'?'png':format==='image/webp'?'webp':'jpg',a=document.createElement('a');a.href=url;a.download='my-tools-image.'+ext;a.textContent='داگرتنی وێنەی گۆڕدراو';a.className='btn';const p=document.createElement('p');p.className='hint';p.textContent='قەبارەی ڕەسەن: '+Math.round(selectedImageFile.size/1024)+' KB · قەبارەی نوێ: '+Math.round(blob.size/1024)+' KB · قەبارە: '+w+' × '+h+' px';const box=document.getElementById('imgresult');box.append(p,a)},format,q);
+}
+let managedObjectUrls=[];
+function loadManagedFiles(){
+ const input=document.getElementById('managerfiles'),box=document.getElementById('managedfilelist');
+ managedObjectUrls.forEach(u=>URL.revokeObjectURL(u));managedObjectUrls=[];box.innerHTML='';
+ const files=Array.from(input.files||[]);
+ if(!files.length){box.innerHTML='<p class="hint">هێشتا هیچ فایلێک هەڵنەبژێردراوە.</p>';return}
+ files.forEach(file=>{
+  const url=URL.createObjectURL(file);managedObjectUrls.push(url);
+  const row=document.createElement('div');row.className='note';
+  const info=document.createElement('div');info.style.minWidth='0';
+  const name=document.createElement('b');name.textContent=file.name;
+  const meta=document.createElement('div');meta.className='hint';meta.textContent=(file.type||'فایلی نەناسراو')+' · '+(file.size<1024*1024?Math.round(file.size/1024)+' KB':(file.size/1024/1024).toFixed(2)+' MB');
+  info.append(name,meta);
+  const actions=document.createElement('div');actions.className='row';actions.style.flexWrap='nowrap';
+  const open=document.createElement('a');open.href=url;open.target='_blank';open.rel='noopener';open.className='btn';open.style.margin='0';open.textContent='بینین';
+  const download=document.createElement('a');download.href=url;download.download=file.name;download.className='btn';download.style.margin='0';download.textContent='داگرتن';
+  actions.append(open,download);row.append(info,actions);box.appendChild(row);
+ });
 }
 function imagesToPDF(){
  let input=document.getElementById('pdffiles'),files=Array.from(input.files||[]).filter(f=>f.type.startsWith('image/')),box=document.getElementById('pdfprint');
