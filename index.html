@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ku" dir="rtl"> 
+<html lang="ku" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -52,86 +52,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:25px}
 
 </style>
 </head>
-  <!-- ئامرازی دروستکردنی وەسڵ -->
-
-<section id="receipt-tool" style="direction:rtl;max-width:600px;margin:25px auto;padding:20px;background:#fff;border:1px solid #ddd;border-radius:16px;font-family:Arial">
-
-  <h2 style="text-align:center;color:#176b45">🧾 دروستکردنی وەسڵ</h2>
-
-  <label>ناوی کڕیار</label>
-
-  <input id="rCustomer" placeholder="ناوی کڕیار" style="width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px;box-sizing:border-box">
-
-  <label>ناوی کاڵا</label>
-
-  <input id="rProduct" placeholder="ناوی کاڵا" style="width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px;box-sizing:border-box">
-
-  <label>نرخ (دینار)</label>
-
-  <input id="rPrice" type="number" min="0" placeholder="نرخ" style="width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px;box-sizing:border-box">
-
-  <label>ژمارە</label>
-
-  <input id="rQty" type="number" min="1" value="1" style="width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px;box-sizing:border-box">
-
-  <button onclick="makeReceipt()" style="width:100%;padding:14px;background:#176b45;color:white;border:0;border-radius:9px;font-size:17px;margin-top:12px">دروستکردنی وەسڵ</button>
-
-  <div id="receiptResult" style="margin-top:18px"></div>
-
-</section>
-
-<script>
-
-function makeReceipt(){
-
- const name=document.getElementById('rCustomer').value.trim();
-
- const product=document.getElementById('rProduct').value.trim();
-
- const price=Number(document.getElementById('rPrice').value);
-
- const qty=Number(document.getElementById('rQty').value);
-
- if(!name||!product||price<=0||qty<1){
-
-  alert('تکایە هەموو زانیارییەکان بە دروستی پڕ بکەرەوە');
-
-  return;
-
- }
-
- const total=price*qty;
-
- document.getElementById('receiptResult').innerHTML=
-
- '<div id="receiptPaper" style="padding:18px;border:2px dashed #176b45;border-radius:12px;text-align:center">'+
-
- '<h2>🧾 وەسڵی فرۆشتن</h2>'+
-   <button class="tool" onclick="show('receipt')"><span class="ico">🧾</span><b>دروستکردنی وەسڵ</b><small>وەسڵی فرۆشتن دروست بکە</small></button>
-
- '<p>ناوی کڕیار: '+safeReceipt(name)+'</p>'+
-
- '<p>کاڵا: '+safeReceipt(product)+'</p>'+
-
- '<p>نرخ: '+price.toLocaleString('en-US')+' دینار</p>'+
-
- '<p>ژمارە: '+qty+'</p>'+
-
- '<h3>کۆی گشتی: '+total.toLocaleString('en-US')+' دینار</h3>'+
-
- '<p>سوپاس بۆ کڕینەکەت ❤️</p></div>'+
-
- '<button onclick="window.print()" style="width:100%;padding:12px;margin-top:10px;background:#2457a7;color:white;border:0;border-radius:8px">چاپکردن / پاشەکەوتکردن</button>';
-
-}
-
-function safeReceipt(s){
-
- return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-
-}
-
-</script>body>
+<body>
 
 <div class="welcome-splash" id="welcomeSplash" aria-label="پەیامی کوردستان">
   <div class="welcome-card">
