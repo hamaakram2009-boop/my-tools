@@ -1,80 +1,126 @@
 <!doctype html>
 <html lang="ku" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#111827"><title>ئامرازەکانی من</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173b2c">
+<title>ئامرازەکانی من</title>
 <style>
- :root{--bg:#f4f7f5;--card:#fff;--ink:#17251f;--muted:#65756d;--line:#e2eae4;--accent:#167447;--soft:#e9f5ed}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 10% 10%,#e5f3e9 0,transparent 28%),var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,sans-serif}header{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(115deg,#17251f 0%,#173d2b 58%,#205c3c 100%);color:#fff;padding:34px 20px 30px;border-radius:0 0 30px 30px;box-shadow:0 12px 30px #153d2920}header:before{content:"";position:absolute;z-index:-1;inset:0;opacity:.18;background:linear-gradient(to bottom,#e32636 0 33.33%,#fff 33.33% 66.66%,#159447 66.66% 100%);mask-image:linear-gradient(110deg,transparent 0%,#000 100%)}header:after{content:"☀";position:absolute;z-index:-1;left:8%;top:50%;transform:translateY(-50%);font-size:clamp(100px,25vw,190px);line-height:1;color:#f4c542;opacity:.22;text-shadow:0 0 35px #f4c54255}header .top{display:flex;align-items:center;justify-content:space-between;gap:12px}h1{font-size:25px;margin:0}header p{margin:12px 0 0;color:#e2eee6;font-size:14px;line-height:1.9;max-width:560px}.tag{font-size:12px;background:#ffffff18;border:1px solid #ffffff40;padding:8px 12px;border-radius:30px;backdrop-filter:blur(8px)}.wrap{max-width:820px;margin:auto;padding:22px 18px}.section-title{font-size:19px;margin:7px 0 16px;font-weight:800}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.tool{background:linear-gradient(145deg,#fff,#fbfdfb);border:1px solid var(--line);border-radius:21px;padding:18px;text-align:right;cursor:pointer;min-height:126px;box-shadow:0 7px 22px #173c2810;transition:transform .18s,box-shadow .18s}.tool:active{transform:scale(.975);box-shadow:0 3px 10px #173c2818}.ico{width:46px;height:46px;border-radius:15px;background:linear-gradient(145deg,#e6f5e9,#f3f8e9);display:grid;place-items:center;font-size:23px;margin-bottom:12px;box-shadow:inset 0 0 0 1px #d7eadb}.tool b{display:block;font-size:15px;color:#1d3829}.tool small{display:block;color:var(--muted);margin-top:5px;font-size:12px}.panel{display:none;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:19px;margin-top:18px;box-shadow:0 8px 24px #173c280c}.panel.active{display:block}.panel h2{font-size:19px;margin:0 0 13px}label{display:block;font-size:13px;margin:12px 0 6px;color:var(--muted)}input,textarea,select{width:100%;padding:13px;border:1px solid #d9dfeb;border-radius:11px;background:#fff;font:inherit;font-size:15px;color:var(--ink)}textarea{min-height:90px;resize:vertical}button,.btn{border:0;background:linear-gradient(135deg,#167447,#208653);color:#fff;border-radius:13px;padding:12px 16px;font:inherit;font-weight:700;cursor:pointer;margin-top:12px;box-shadow:0 4px 10px #16744720}button.secondary{background:#eef0f6;color:var(--ink)}.row{display:flex;gap:9px;flex-wrap:wrap}.row button{flex:1}#qrout{display:grid;place-items:center;margin-top:15px}#qrout img{max-width:220px;border:10px solid white;box-shadow:0 2px 12px #0001}.hint{font-size:12px;color:var(--muted);line-height:1.8}.note{padding:11px;border:1px solid var(--line);border-radius:10px;margin-top:9px;display:flex;justify-content:space-between;gap:8px;align-items:center}.note button{margin:0;padding:7px 10px;background:#fcebec;color:#a52c39;font-size:12px}.preview{max-width:100%;margin-top:12px;border-radius:12px}.hidden{display:none}#pdfprint{display:none}#pdfprint.ready{display:block;margin-top:16px}#pdfprint .pdfpage{min-height:240px;display:flex;align-items:center;justify-content:center;padding:12px;border:1px solid var(--line);margin:10px 0;background:#fff}#pdfprint img{max-width:100%;max-height:75vh;object-fit:contain}@media print{body *{visibility:hidden!important}#pdfprint,#pdfprint *{visibility:visible!important}#pdfprint{display:block!important;position:absolute;left:0;top:0;width:100%}#pdfprint .pdfpage{height:277mm;min-height:0;border:0;margin:0;page-break-after:always;break-after:page}#pdfprint img{max-height:260mm}header,footer{display:none!important}@page{size:A4;margin:10mm}}footer{text-align:center;color:var(--muted);font-size:12px;padding:26px 18px 34px;line-height:2}footer strong{display:block;color:#1b6841;font-size:15px;margin-top:4px}
-@media(max-width:420px){header{padding:28px 17px 25px}h1{font-size:22px}.wrap{padding:18px 13px}.grid{gap:10px}.tool{padding:14px;min-height:120px;border-radius:18px}.tool b{font-size:14px}.tool small{font-size:11px}}
-</style></head>
+:root{--bg:#f5f7f5;--card:#fff;--ink:#17251e;--muted:#65756b;--line:#dfe8e1;--green:#176b43;--red:#c72d3b;--gold:#f4c542;--soft:#eaf4ed}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,sans-serif}
+header{color:#fff;padding:25px 18px 24px;background:linear-gradient(120deg,#b82032 0 32%,#f7f7f2 32% 66%,#176b43 66%);position:relative}
+.hero{max-width:850px;margin:auto;background:#14251ddd;border:1px solid #ffffff35;border-radius:22px;padding:20px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:10px}h1{font-size:24px;margin:0}.tag{border:1px solid #ffffff55;border-radius:30px;padding:7px 12px;font-size:12px}
+header p{line-height:1.9;margin:12px 0 0;color:#edf4ee;font-size:14px}.sun{color:var(--gold)}
+.wrap{max-width:850px;margin:auto;padding:18px}.section-title{font-size:18px;margin:8px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.tool{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px;text-align:right;cursor:pointer;min-height:110px;box-shadow:0 4px 14px #173b2c0a;color:var(--ink)}
+.tool:active{transform:scale(.985)}.ico{width:40px;height:40px;border-radius:12px;background:var(--soft);display:grid;place-items:center;font-size:21px;margin-bottom:9px}
+.tool b{display:block;font-size:14px}.tool small{display:block;color:var(--muted);margin-top:5px;line-height:1.6;font-size:12px}
+.panel{display:none;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:17px;margin-top:17px;box-shadow:0 5px 18px #173b2c0a}.panel.active{display:block}
+.panel h2{font-size:18px;margin:0 0 12px}label{display:block;font-size:13px;margin:12px 0 6px;color:var(--muted)}
+input,textarea,select{width:100%;padding:12px;border:1px solid #d5e0d8;border-radius:11px;background:#fff;font:inherit;font-size:15px;color:var(--ink)}
+textarea{min-height:90px;resize:vertical}
+button,.btn{border:0;background:var(--green);color:#fff;border-radius:11px;padding:12px 15px;font:inherit;font-weight:650;cursor:pointer;margin-top:12px;text-decoration:none;display:inline-block}
+.secondary{background:#edf2ee!important;color:var(--ink)!important}.danger{background:#fff0f0!important;color:#a52331!important}
+.row{display:flex;gap:9px;flex-wrap:wrap}.row>*{flex:1;min-width:110px}
+.result{background:#edf6ef;border:1px solid #d7e9dc;border-radius:12px;padding:13px;margin-top:13px;line-height:1.9;font-weight:650;overflow-wrap:anywhere}
+.hint{font-size:12px;color:var(--muted);line-height:1.8}.note{padding:11px;border:1px solid var(--line);border-radius:10px;margin-top:9px;display:flex;justify-content:space-between;gap:8px;align-items:center;overflow-wrap:anywhere}.note button{margin:0;padding:7px 10px;font-size:12px}
+#qrout{display:grid;place-items:center;margin-top:15px}#qrout img{max-width:220px;border:8px solid white;box-shadow:0 2px 12px #0001}
+.preview{max-width:100%;margin-top:12px;border-radius:12px}.hidden{display:none}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:25px}
+@media(min-width:650px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding:24px 28px}}
+
+.national-message{max-width:850px;margin:18px auto 0;padding:20px 16px;text-align:center;border-radius:18px;color:#fff;background:linear-gradient(135deg,#a91f32 0 33%,#f7f7f2 33% 66%,#176b43 66%);box-shadow:0 5px 18px #173b2c12;position:relative;overflow:hidden}
+.national-message:before{content:"";position:absolute;inset:6px;border:1px solid #ffffff80;border-radius:13px;pointer-events:none}
+.national-message h2{position:relative;margin:4px 0 9px;font-size:19px;color:#173b2c;text-shadow:0 1px 0 #ffffff80}
+.national-message p{position:relative;margin:0 0 7px;font-size:15px;font-weight:750;color:#173b2c}
+.national-message small{position:relative;color:#173b2c;font-size:12px;font-weight:650}
+.national-sun{position:relative;font-size:26px;color:#d5a900;text-shadow:0 1px 2px #fff}
+@media(min-width:650px){.national-message{margin:20px auto 0;padding:24px}.national-message h2{font-size:22px}}
+
+
+.welcome-splash{position:fixed;inset:0;z-index:99999;display:grid;place-items:center;padding:22px;background:linear-gradient(145deg,#a91f32 0 32%,#f7f7f2 32% 68%,#176b43 68%);animation:welcomeFade 1s ease 3s forwards}
+.welcome-card{width:min(100%,560px);padding:30px 20px;text-align:center;border:1px solid #ffffffa8;border-radius:22px;background:#ffffffed;box-shadow:0 16px 50px #10271935;animation:welcomePop .7s ease both}
+.welcome-sun{font-size:48px;color:#d5a900;line-height:1.2}
+.welcome-card h1{margin:12px 0;font-size:clamp(22px,5vw,30px);color:#176b43}
+.welcome-card p{margin:0 0 12px;font-size:16px;font-weight:750;color:#26352d}
+.welcome-card small{font-size:13px;color:#536258}
+@keyframes welcomePop{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes welcomeFade{to{opacity:0;visibility:hidden;pointer-events:none}}
+@media(prefers-reduced-motion:reduce){.welcome-splash{animation:none;opacity:0;visibility:hidden}}
+
+</style>
+</head>
 <body>
-<header><div class="top"><h1>✦ ئامرازەکانی من</h1><span class="tag">بەخۆڕایی</span></div><p>ئامرازە سوودبەخشەکانت لە یەک شوێندا؛ بە ئاسانی لە مۆبایل و کۆمپیوتەر بەکاریان بهێنە.</p></header>
-<main class="wrap"><h2 class="section-title">ئامرازەکان</h2>
-<div class="grid">
-<button class="tool" onclick="show('qr')"><span class="ico">▦</span><b>دروستکردنی QR</b><small>لینک یان دەق بکە بە QR</small></button>
-<button class="tool" onclick="show('notes')"><span class="ico">📝</span><b>تێبینییەکان</b><small>تێبینییەکانت پاشەکەوت بکە</small></button>
-<button class="tool" onclick="show('image')"><span class="ico">🖼️</span><b>کەمکردنەوەی قەبارەی وێنە</b><small>وێنەکەت لەسەر ئامێرەکەت بچووک بکەرەوە</small></button>
-<button class="tool" onclick="show('pdf')"><span class="ico">📄</span><b>ئامرازەکانی PDF</b><small>چاپکردن و پاشەکەوتکردن وەک PDF</small></button>
-<button class="tool" onclick="show('links')"><span class="ico">🔗</span><b>لینکەکانم</b><small>لینکە گرنگەکانت کۆبکەرەوە</small></button>
-<button class="tool" onclick="show('files')"><span class="ico">📁</span><b>بەڕێوەبردنی فایلەکان</b><small>فایلەکانت هەڵبژێرە، ببینە و دایانبگرە</small></button>
+
+<div class="welcome-splash" id="welcomeSplash" aria-label="پەیامی کوردستان">
+  <div class="welcome-card">
+    <div class="welcome-sun">☀</div>
+    <h1>کوردستان، خاکی شانازی و خۆشەویستی</h1>
+    <p>بە هیوای داهاتوویەکی ڕووناک بۆ نیشتمانەکەمان ❤️</p>
+    <small>ئەمەش ئامرازەکانی منە، بە خۆشەویستی بۆ هەموو کوردێک</small>
+  </div>
 </div>
-<section id="qr" class="panel"><h2>▦ دروستکردنی QR</h2><label for="qrtext">لینک یان دەق بنووسە</label><input id="qrtext" placeholder="https://example.com"><button onclick="makeQR()">دروستکردنی QR</button><div id="qrout"></div><p class="hint">بۆ دروستکردنی QR پێویستە ئینتەرنێتت هەبێت. ناوەڕۆکی نووسراو بۆ خزمەتگوزاری QR دەنێردرێت.</p></section>
-<section id="notes" class="panel"><h2>📝 تێبینییەکان</h2><label for="notetext">تێبینیی نوێ</label><textarea id="notetext" placeholder="تێبینییەکەت لێرە بنووسە..."></textarea><button onclick="addNote()">پاشەکەوتکردن</button><div id="notelist"></div><p class="hint">تێبینییەکان تەنها لە هەمان وێبگەڕ و ئامێرەکەتدا پاشەکەوت دەبن.</p></section>
-<section id="image" class="panel"><h2>🖼️ ئامرازەکانی وێنە</h2><label for="imgfile">وێنە هەڵبژێرە</label><input id="imgfile" type="file" accept="image/*" onchange="loadImageTool()"><div id="imgcontrols" class="hidden"><label for="imgwidth">پانی (px)</label><input id="imgwidth" type="number" min="1" max="6000" placeholder="پانی بە پیکسڵ"><label for="imgheight">بەرزی (px)</label><input id="imgheight" type="number" min="1" max="6000" placeholder="بەرزی بە پیکسڵ"><label for="imgformat">جۆری فایل</label><select id="imgformat"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WEBP</option></select><label for="quality">کوالێتی (بۆ JPG و WEBP)</label><select id="quality"><option value="0.9">باشترین (90%)</option><option value="0.8" selected>باش (80%)</option><option value="0.6">مامناوەند (60%)</option><option value="0.4">کەم (40%)</option></select><div class="row"><button type="button" onclick="processImage()">گۆڕین و ئامادەکردنی وێنە</button></div></div><div id="imgresult"></div><p class="hint">وێنەکە لەسەر ئامێرەکەت پرۆسێس دەکرێت؛ بۆ هیچ شوێنێک نانێردرێت. قەبارەی بەتاڵ واتە قەبارەی ڕەسەن دەپارێزرێت.</p></section>
-<section id="links" class="panel"><h2>🔗 بەڕێوەبردنی لینکەکانم</h2><label for="linkname">ناوی لینک</label><input id="linkname" placeholder="وەک: Instagram"><label for="linkurl">بەستەر (URL)</label><input id="linkurl" type="url" inputmode="url" placeholder="https://example.com"><button onclick="addLink()">زیادکردنی لینک</button><div id="linklist"></div><p class="hint">لینکەکان تەنها لە هەمان وێبگەڕ و ئامێرەکەتدا پاشەکەوت دەبن. بۆ هاوبەشکردنیان، لینکەکان کۆپی بکە و بنێرە.</p></section>
-<section id="files" class="panel"><h2>📁 بەڕێوەبردنی فایلەکان</h2><label for="managerfiles">فایلەکان هەڵبژێرە</label><input id="managerfiles" type="file" multiple onchange="loadManagedFiles()"><p class="hint">فایلەکان لەسەر ئامێرەکەت دەمێننەوە و بۆ هیچ سێرڤەرێک نانێردرێن. ئەم لیستە تەنها تا کاتی داخستنی پەڕەکە دەمێنێتەوە؛ بۆ پاشەکەوتی درێژخایەن فایلەکان لە Files ـی مۆبایلەکەت بەکاربهێنە.</p><div id="managedfilelist"></div></section>
-<section id="pdf" class="panel"><h2>📄 ئامرازەکانی PDF</h2><label for="pdffiles">یەک یان چەند وێنە هەڵبژێرە</label><input id="pdffiles" type="file" accept="image/*" multiple><button onclick="imagesToPDF()">گۆڕینی وێنەکان بۆ PDF</button><div id="pdfprint"></div><p class="hint">دوای ئامادەبوونی پێشبینین، دوگمەی چاپکردن دابگرە. لە iPhone لە پەڕەی چاپ، وێنەی پێشبینین بە دوو پەنجە فراوان بکە، پاشان Share و Save to Files هەڵبژێرە.</p><hr style="border:0;border-top:1px solid var(--line);margin:18px 0"><p>هەروەها دەتوانیت خودی ئەم پەڕەیە بکەیتە PDF:</p><button class="secondary" onclick="window.print()">چاپکردن / پاشەکەوتکردنی ئەم پەڕەیە وەک PDF</button></section>
-</main><footer>ئامرازەکانی من · بەخۆڕایی بۆ هەمووان<strong>دروستکەر: محمد أكرم</strong><span>بە شانازییەوە لە کوردستان ❤️</span></footer>
+
+<header><div class="hero"><div class="top"><h1>✦ ئامرازەکانی من <span class="sun">☀</span></h1><span class="tag">بەخۆڕایی</span></div><p>ئامرازە سوودبەخشەکانت لە یەک شوێندا؛ بە ئاسانی لە مۆبایل و کۆمپیوتەر بەکاریان بهێنە.</p><p style="font-size:12px;margin-top:5px">دروستکەر: محمد أكرم</p></div></header>
+<main class="wrap">
+<h2 class="section-title">ئامرازەکان</h2>
+<div class="grid">
+<button class="tool" onclick="show('qr')"><span class="ico">▦</span><b>دروستکردنی QR</b><small>لینک یان دەق بکە بە کۆدی QR</small></button>
+<button class="tool" onclick="show('notes')"><span class="ico">📝</span><b>تێبینییەکان</b><small>تێبینییەکانت پاشەکەوت بکە</small></button>
+<button class="tool" onclick="show('image')"><span class="ico">🖼️</span><b>ئامرازەکانی وێنە</b><small>قەبارە و جۆری وێنە بگۆڕە</small></button>
+<button class="tool" onclick="show('pdf')"><span class="ico">📄</span><b>ئامرازەکانی PDF</b><small>وێنەکان بکە بە PDF</small></button>
+<button class="tool" onclick="show('links')"><span class="ico">🔗</span><b>لینکەکانم</b><small>چەند بەستەرێک لە یەک شوێن</small></button>
+<button class="tool" onclick="show('files')"><span class="ico">📁</span><b>فایلەکانم</b><small>فایل هەڵبژێرە و زانیارییەکەی ببینە</small></button>
+<button class="tool" onclick="show('dollar')"><span class="ico">💵</span><b>حیسابی دۆلار</b><small>دۆلار بگۆڕە بۆ دینار و پێچەوانە</small></button>
+<button class="tool" onclick="show('gold')"><span class="ico">🪙</span><b>حیسابی زێڕ</b><small>نرخی زێڕ بە گرام و مثقال</small></button>
+<button class="tool" onclick="show('percent')"><span class="ico">％</span><b>حیسابی ڕێژە و داشکاندن</b><small>بڕی داشکاندن و نرخی کۆتایی</small></button>
+<button class="tool" onclick="show('installment')"><span class="ico">🧾</span><b>حیسابی قەرز و قیست</b><small>قیستی مانگانە حساب بکە</small></button>
+<button class="tool" onclick="show('age')"><span class="ico">🎂</span><b>حیسابی تەمەن</b><small>تەمەنت بە ساڵ و مانگ و ڕۆژ</small></button>
+</div>
+
+<section id="qr" class="panel"><h2>▦ دروستکردنی QR</h2><label>لینک یان دەق بنووسە</label><input id="qrtext" placeholder="https://example.com"><button onclick="makeQR()">دروستکردنی QR</button><div id="qrout"></div><p class="hint">بۆ دروستکردنی QR پێویستە ئینتەرنێتت هەبێت. ناوەڕۆکی نووسراو بۆ خزمەتگوزاری QR دەنێردرێت.</p></section>
+
+<section id="notes" class="panel"><h2>📝 تێبینییەکان</h2><label>تێبینیی نوێ</label><textarea id="notetext" placeholder="تێبینییەکەت لێرە بنووسە..."></textarea><button onclick="addNote()">پاشەکەوتکردن</button><div id="notelist"></div><p class="hint">تێبینییەکان تەنها لە هەمان وێبگەڕ و ئامێرەکەتدا پاشەکەوت دەبن.</p></section>
+
+<section id="image" class="panel"><h2>🖼️ گۆڕینی وێنە</h2><label>وێنە هەڵبژێرە</label><input id="imgfile" type="file" accept="image/*" onchange="loadImage()"><div id="imgcontrols" class="hidden"><label>پانی (پیکسڵ)</label><input id="imgwidth" type="number" min="1" max="6000"><label>بەرزی (پیکسڵ)</label><input id="imgheight" type="number" min="1" max="6000"><label>جۆری فایل</label><select id="imgformat"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WEBP</option></select><label>کوالێتی</label><select id="quality"><option value="0.9">90%</option><option value="0.8" selected>80%</option><option value="0.6">60%</option></select><button onclick="processImage()">ئامادەکردنی وێنە</button></div><div id="imgresult"></div><p class="hint">وێنەکە لەسەر ئامێرەکەت پرۆسێس دەکرێت و بۆ هیچ شوێنێک نانێردرێت.</p></section>
+
+<section id="pdf" class="panel"><h2>📄 گۆڕینی وێنە بۆ PDF</h2><label>یەک یان چەند وێنە هەڵبژێرە</label><input id="pdffiles" type="file" accept="image/*" multiple><button onclick="imagesToPDF()">ئامادەکردنی PDF</button><div id="pdfprint"></div><p class="hint">لە iPhone دوای کرتەکردنی چاپکردن، لە پەڕەی پێشبینینەوە Share بکە و Save to Files هەڵبژێرە.</p></section>
+
+<section id="links" class="panel"><h2>🔗 لینکەکانم</h2><label>ناوی لینک</label><input id="linkname" placeholder="وەک: Instagram"><label>بەستەر</label><input id="linkurl" placeholder="https://..."><button onclick="addLink()">زیادکردنی لینک</button><div id="linklist"></div><p class="hint">لینکەکان لە هەمان ئامێر و وێبگەڕدا پاشەکەوت دەبن.</p></section>
+<section id="files" class="panel"><h2>📁 فایلەکانم</h2><label>فایل هەڵبژێرە</label><input type="file" id="myfiles" multiple onchange="showFiles()"><div id="fileinfo" class="hint"></div><p class="hint">ئەم بەشە تەنها فایلە هەڵبژێردراوەکانت لە ئامێرەکەت پیشان دەدات؛ فایلەکان بۆ سێرڤەر نانێردرێن و بە پاشەکەوتی هەمیشەیی ناژمێردرێن.</p></section>
+
+<section id="dollar" class="panel"><h2>💵 حیسابی دۆلار و دینار</h2><label>نرخی ١ دۆلار بە دینار</label><input id="rate" type="number" min="1" value="1500"><div class="row"><div><label>بڕی دۆلار ($)</label><input id="usd" type="number" min="0" placeholder="100" oninput="usdToIqd()"></div><div><label>بڕی دینار (IQD)</label><input id="iqd" type="number" min="0" placeholder="150000" oninput="iqdToUsd()"></div></div><button onclick="usdToIqd()">حیسابکردنی دۆلار بۆ دینار</button><div id="dollarout" class="result">نرخی دۆلار داخڵ بکە، پاشان بڕەکە بنووسە.</div><p class="hint">نرخەکە خۆت دەتوانیت بگۆڕیت؛ ئەمە نرخی ڕاستەوخۆی بازاڕ نییە.</p></section>
+
+<section id="gold" class="panel"><h2>🪙 حیسابی زێڕ</h2><label>نرخی یەک گرام زێڕ (دینار)</label><input id="gramprice" type="number" min="0" placeholder="نرخی گرام"><label>کێشی زێڕ (گرام)</label><input id="gramweight" type="number" min="0" step="0.001" placeholder="وەک 5"><label>ژمارەی گرام بۆ یەک مثقال</label><input id="mithqal" type="number" min="0.001" step="0.001" value="4.608"><button onclick="calcGold()">حیسابکردن</button><div id="goldout" class="result">نرخ و کێشەکە داخڵ بکە.</div><p class="hint">٤.٦٠٨ گرام وەک بنەمای باوی مثقال دانراوە؛ ئەگەر لە بازاڕەکەتدا جیاوازە، دەتوانیت بیگۆڕیت.</p></section>
+
+<section id="percent" class="panel"><h2>％ حیسابی داشکاندن</h2><label>نرخی سەرەتا</label><input id="original" type="number" min="0" placeholder="100000"><label>ڕێژەی داشکاندن (%)</label><input id="discount" type="number" min="0" max="100" placeholder="20"><button onclick="calcDiscount()">حیسابکردن</button><div id="discountout" class="result">نرخ و ڕێژەی داشکاندن داخڵ بکە.</div></section>
+
+<section id="installment" class="panel"><h2>🧾 حیسابی قەرز و قیست</h2><label>کۆی قەرز (دینار)</label><input id="debt" type="number" min="0" placeholder="1200000"><label>پارەی پێشەکی (دینار)</label><input id="down" type="number" min="0" value="0"><label>ماوە بە مانگ</label><input id="months" type="number" min="1" step="1" placeholder="12"><button onclick="calcInstallment()">حیسابکردن</button><div id="installout" class="result">زانیارییەکان داخڵ بکە.</div><p class="hint">ئەم حیسابە بەبێ سوو و کرێی زیادەیە.</p></section>
+
+<section id="age" class="panel"><h2>🎂 حیسابی تەمەن</h2><label>بەرواری لەدایکبوون</label><input id="birth" type="date"><button onclick="calcAge()">حیسابکردنی تەمەن</button><div id="ageout" class="result">بەرواری لەدایکبوون هەڵبژێرە.</div></section>
+</main>
+<footer>ئامرازەکانی من · وەشانی نوێ · بەخۆڕایی</footer>
 <script>
-
-function getLinks(){try{return JSON.parse(localStorage.getItem('mytools_links')||'[]')}catch(e){return []}}
-function renderLinks(){const box=document.getElementById('linklist');box.innerHTML='';getLinks().forEach((item,i)=>{const d=document.createElement('div');d.className='note';const left=document.createElement('div');left.style.minWidth='0';const name=document.createElement('b');name.textContent=item.name;const url=document.createElement('div');url.className='hint';url.style.overflowWrap='anywhere';url.textContent=item.url;left.append(name,url);const actions=document.createElement('div');actions.className='row';actions.style.flexWrap='nowrap';const open=document.createElement('button');open.textContent='کردنەوە';open.onclick=()=>window.open(item.url,'_blank','noopener');const copy=document.createElement('button');copy.className='secondary';copy.textContent='کۆپی';copy.onclick=async()=>{try{await navigator.clipboard.writeText(item.url);alert('لینکەکە کۆپی کرا')}catch(e){prompt('لینکەکە کۆپی بکە:',item.url)}};const del=document.createElement('button');del.textContent='سڕینەوە';del.onclick=()=>{const a=getLinks();a.splice(i,1);localStorage.setItem('mytools_links',JSON.stringify(a));renderLinks()};actions.append(open,copy,del);d.append(left,actions);box.appendChild(d)})}
-function addLink(){const n=document.getElementById('linkname'),u=document.getElementById('linkurl');let name=n.value.trim(),raw=u.value.trim();if(!name||!raw){alert('تکایە ناو و لینک پڕ بکەرەوە');return}let url;try{url=new URL(raw);if(!['http:','https:'].includes(url.protocol))throw new Error()}catch(e){alert('تکایە لینکێکی دروست بە https:// یان http:// بنووسە');return}const a=getLinks();a.unshift({name,url:url.href});localStorage.setItem('mytools_links',JSON.stringify(a));n.value='';u.value='';renderLinks()}
-renderLinks();
-
 function show(id){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'})}
 function makeQR(){let v=document.getElementById('qrtext').value.trim(),out=document.getElementById('qrout');if(!v){alert('تکایە لینک یان دەق بنووسە');return}out.innerHTML='';let im=document.createElement('img');im.alt='QR Code';im.src='https://api.qrserver.com/v1/create-qr-code/?size=240x240&data='+encodeURIComponent(v);out.appendChild(im);let a=document.createElement('a');a.href=im.src;a.download='my-tools-qr.png';a.textContent='داگرتنی وێنەی QR';a.className='btn';out.appendChild(a)}
 function getNotes(){try{return JSON.parse(localStorage.getItem('mytools_notes')||'[]')}catch(e){return []}}
-function renderNotes(){let box=document.getElementById('notelist');box.innerHTML='';getNotes().forEach((n,i)=>{let d=document.createElement('div');d.className='note';let s=document.createElement('span');s.textContent=n;let b=document.createElement('button');b.textContent='سڕینەوە';b.onclick=()=>{let a=getNotes();a.splice(i,1);localStorage.setItem('mytools_notes',JSON.stringify(a));renderNotes()};d.append(s,b);box.appendChild(d)})}
+function renderNotes(){let box=document.getElementById('notelist');box.innerHTML='';getNotes().forEach((n,i)=>{let d=document.createElement('div');d.className='note';let s=document.createElement('span');s.textContent=n;let b=document.createElement('button');b.className='danger';b.textContent='سڕینەوە';b.onclick=()=>{let a=getNotes();a.splice(i,1);localStorage.setItem('mytools_notes',JSON.stringify(a));renderNotes()};d.append(s,b);box.appendChild(d)})}
 function addNote(){let t=document.getElementById('notetext'),v=t.value.trim();if(!v)return;let a=getNotes();a.unshift(v);localStorage.setItem('mytools_notes',JSON.stringify(a));t.value='';renderNotes()}renderNotes();
-let selectedImageFile=null,selectedImageObject=null;
-function loadImageTool(){
- const f=document.getElementById('imgfile').files[0],box=document.getElementById('imgresult'),controls=document.getElementById('imgcontrols');
- box.innerHTML='';selectedImageFile=f||null;selectedImageObject=null;controls.classList.add('hidden');if(!f)return;
- if(!f.type.startsWith('image/')){alert('تکایە فایلێکی وێنە هەڵبژێرە');return}
- const url=URL.createObjectURL(f),im=new Image();im.onload=()=>{selectedImageObject=im;document.getElementById('imgwidth').value=im.naturalWidth;document.getElementById('imgheight').value=im.naturalHeight;controls.classList.remove('hidden');const p=document.createElement('p');p.className='hint';p.textContent='قەبارەی ڕەسەن: '+im.naturalWidth+' × '+im.naturalHeight+' px · '+Math.round(f.size/1024)+' KB';const preview=document.createElement('img');preview.src=url;preview.className='preview';preview.style.maxHeight='220px';box.append(p,preview)};im.onerror=()=>alert('نەتوانرا ئەم وێنەیە بخوێندرێتەوە');im.src=url;
-}
-function processImage(){
- if(!selectedImageObject||!selectedImageFile){alert('سەرەتا وێنە هەڵبژێرە');return}
- let w=parseInt(document.getElementById('imgwidth').value,10)||selectedImageObject.naturalWidth,h=parseInt(document.getElementById('imgheight').value,10)||selectedImageObject.naturalHeight;
- if(w<1||h<1||w>6000||h>6000){alert('پانی و بەرزی دەبێت لە 1 تا 6000 پیکسڵ بن');return}
- const format=document.getElementById('imgformat').value,q=Number(document.getElementById('quality').value),canvas=document.createElement('canvas');canvas.width=w;canvas.height=h;canvas.getContext('2d').drawImage(selectedImageObject,0,0,w,h);
- canvas.toBlob(blob=>{if(!blob){alert('گۆڕینی وێنە سەرکەوتوو نەبوو');return}const url=URL.createObjectURL(blob),ext=format==='image/png'?'png':format==='image/webp'?'webp':'jpg',a=document.createElement('a');a.href=url;a.download='my-tools-image.'+ext;a.textContent='داگرتنی وێنەی گۆڕدراو';a.className='btn';const p=document.createElement('p');p.className='hint';p.textContent='قەبارەی ڕەسەن: '+Math.round(selectedImageFile.size/1024)+' KB · قەبارەی نوێ: '+Math.round(blob.size/1024)+' KB · قەبارە: '+w+' × '+h+' px';const box=document.getElementById('imgresult');box.append(p,a)},format,q);
-}
-let managedObjectUrls=[];
-function loadManagedFiles(){
- const input=document.getElementById('managerfiles'),box=document.getElementById('managedfilelist');
- managedObjectUrls.forEach(u=>URL.revokeObjectURL(u));managedObjectUrls=[];box.innerHTML='';
- const files=Array.from(input.files||[]);
- if(!files.length){box.innerHTML='<p class="hint">هێشتا هیچ فایلێک هەڵنەبژێردراوە.</p>';return}
- files.forEach(file=>{
-  const url=URL.createObjectURL(file);managedObjectUrls.push(url);
-  const row=document.createElement('div');row.className='note';
-  const info=document.createElement('div');info.style.minWidth='0';
-  const name=document.createElement('b');name.textContent=file.name;
-  const meta=document.createElement('div');meta.className='hint';meta.textContent=(file.type||'فایلی نەناسراو')+' · '+(file.size<1024*1024?Math.round(file.size/1024)+' KB':(file.size/1024/1024).toFixed(2)+' MB');
-  info.append(name,meta);
-  const actions=document.createElement('div');actions.className='row';actions.style.flexWrap='nowrap';
-  const open=document.createElement('a');open.href=url;open.target='_blank';open.rel='noopener';open.className='btn';open.style.margin='0';open.textContent='بینین';
-  const download=document.createElement('a');download.href=url;download.download=file.name;download.className='btn';download.style.margin='0';download.textContent='داگرتن';
-  actions.append(open,download);row.append(info,actions);box.appendChild(row);
- });
-}
-function imagesToPDF(){
- let input=document.getElementById('pdffiles'),files=Array.from(input.files||[]).filter(f=>f.type.startsWith('image/')),box=document.getElementById('pdfprint');
- if(!files.length){alert('تکایە لانیکەم یەک وێنە هەڵبژێرە');return}
- box.innerHTML='';
- files.forEach(file=>{let page=document.createElement('div');page.className='pdfpage';let img=document.createElement('img');img.alt='وێنە بۆ PDF';img.src=URL.createObjectURL(file);page.appendChild(img);box.appendChild(page)});
- let btn=document.createElement('button');btn.type='button';btn.textContent='چاپکردن / پاشەکەوتکردنی PDF';btn.onclick=()=>window.print();box.appendChild(btn);box.classList.add('ready');box.scrollIntoView({behavior:'smooth',block:'start'});
-}
-</script></body></html>
+let selectedImage=null;
+function loadImage(){let f=document.getElementById('imgfile').files[0],box=document.getElementById('imgresult'),controls=document.getElementById('imgcontrols');box.innerHTML='';selectedImage=null;controls.classList.add('hidden');if(!f)return;if(!f.type.startsWith('image/')){alert('تکایە وێنە هەڵبژێرە');return}let url=URL.createObjectURL(f),im=new Image();im.onload=()=>{selectedImage=im;document.getElementById('imgwidth').value=im.naturalWidth;document.getElementById('imgheight').value=im.naturalHeight;controls.classList.remove('hidden')};im.src=url}
+function processImage(){if(!selectedImage)return;let w=Number(document.getElementById('imgwidth').value)||selectedImage.naturalWidth,h=Number(document.getElementById('imgheight').value)||selectedImage.naturalHeight;if(w<1||h<1||w>6000||h>6000){alert('پانی و بەرزی دەبێت لە ١ تا ٦٠٠٠ بن');return}let fmt=document.getElementById('imgformat').value,q=Number(document.getElementById('quality').value),c=document.createElement('canvas');c.width=w;c.height=h;c.getContext('2d').drawImage(selectedImage,0,0,w,h);c.toBlob(blob=>{if(!blob){alert('گۆڕین سەرکەوتوو نەبوو');return}let url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='my-tools-image.'+(fmt==='image/png'?'png':fmt==='image/webp'?'webp':'jpg');a.textContent='داگرتنی وێنەی نوێ';a.className='btn';let box=document.getElementById('imgresult');box.innerHTML='';box.appendChild(a)},fmt,q)}
+function imagesToPDF(){let fs=Array.from(document.getElementById('pdffiles').files||[]).filter(f=>f.type.startsWith('image/')),box=document.getElementById('pdfprint');if(!fs.length){alert('تکایە وێنە هەڵبژێرە');return}box.innerHTML='';fs.forEach(f=>{let d=document.createElement('div');d.style.cssText='height:70vh;display:flex;align-items:center;justify-content:center;page-break-after:always';let im=document.createElement('img');im.src=URL.createObjectURL(f);im.style.cssText='max-width:100%;max-height:65vh;object-fit:contain';d.appendChild(im);box.appendChild(d)});let b=document.createElement('button');b.textContent='کردنەوەی چاپ / پاشەکەوتکردنی PDF';b.onclick=()=>window.print();box.appendChild(b);box.scrollIntoView({behavior:'smooth'})}
+function getLinks(){try{return JSON.parse(localStorage.getItem('mytools_links')||'[]')}catch(e){return []}}
+function renderLinks(){let box=document.getElementById('linklist');box.innerHTML='';getLinks().forEach((x,i)=>{let d=document.createElement('div');d.className='note';let a=document.createElement('a');a.href=x.u;a.target='_blank';a.rel='noopener';a.textContent=x.n+' — '+x.u;let b=document.createElement('button');b.className='danger';b.textContent='سڕینەوە';b.onclick=()=>{let z=getLinks();z.splice(i,1);localStorage.setItem('mytools_links',JSON.stringify(z));renderLinks()};d.append(a,b);box.appendChild(d)})}
+function addLink(){let n=document.getElementById('linkname').value.trim(),u=document.getElementById('linkurl').value.trim();if(!n||!u){alert('ناو و بەستەر پڕ بکەرەوە');return}if(!/^https?:\/\//i.test(u))u='https://'+u;let a=getLinks();a.push({n,u});localStorage.setItem('mytools_links',JSON.stringify(a));document.getElementById('linkname').value='';document.getElementById('linkurl').value='';renderLinks()}renderLinks();
+function showFiles(){let fs=Array.from(document.getElementById('myfiles').files||[]);document.getElementById('fileinfo').textContent=fs.length?fs.map(f=>f.name+' — '+(f.size/1024).toFixed(1)+' KB').join(' | '):'هیچ فایلێک هەڵنەبژێردراوە.'}
+function usdToIqd(){let r=Number(document.getElementById('rate').value),u=Number(document.getElementById('usd').value);if(r>0&&u>=0){document.getElementById('iqd').value=(u*r).toFixed(0);document.getElementById('dollarout').textContent=u.toLocaleString('en-US')+' دۆلار = '+(u*r).toLocaleString('en-US',{maximumFractionDigits:0})+' دینار عێراقی'}}
+function iqdToUsd(){let r=Number(document.getElementById('rate').value),v=Number(document.getElementById('iqd').value);if(r>0&&v>=0){document.getElementById('usd').value=(v/r).toFixed(2);document.getElementById('dollarout').textContent=v.toLocaleString('en-US')+' دینار = '+(v/r).toFixed(2)+' دۆلار'}}
+function calcGold(){let p=Number(document.getElementById('gramprice').value),w=Number(document.getElementById('gramweight').value),m=Number(document.getElementById('mithqal').value);if(p<=0||w<=0||m<=0){alert('تکایە نرخ و کێش بە دروستی داخڵ بکە');return}document.getElementById('goldout').textContent='کۆی نرخ: '+(p*w).toLocaleString('en-US',{maximumFractionDigits:0})+' دینار · کێش بە مثقال: '+(w/m).toFixed(3)+' مثقال'}
+function calcDiscount(){let p=Number(document.getElementById('original').value),d=Number(document.getElementById('discount').value);if(p<0||d<0||d>100||!Number.isFinite(p)||!Number.isFinite(d)){alert('تکایە نرخ و داشکاندن بە دروستی بنووسە');return}let save=p*d/100;document.getElementById('discountout').textContent='بڕی داشکاندن: '+save.toLocaleString('en-US')+' · نرخی کۆتایی: '+(p-save).toLocaleString('en-US')}
+function calcInstallment(){let total=Number(document.getElementById('debt').value),down=Number(document.getElementById('down').value)||0,months=Number(document.getElementById('months').value);if(total<=0||down<0||down>total||months<1||!Number.isInteger(months)){alert('تکایە قەرز و پێشەکی و ژمارەی مانگ بە دروستی بنووسە');return}let remain=total-down;document.getElementById('installout').textContent='ماوەی قەرز: '+remain.toLocaleString('en-US')+' دینار · قیستی مانگانە: '+(remain/months).toLocaleString('en-US',{maximumFractionDigits:0})+' دینار'}
+function calcAge(){let v=document.getElementById('birth').value;if(!v){alert('بەرواری لەدایکبوون هەڵبژێرە');return}let b=new Date(v+'T00:00:00'),now=new Date();if(b>now){alert('بەرواری لەدایکبوون نابێت لە داهاتوودا بێت');return}let y=now.getFullYear()-b.getFullYear(),m=now.getMonth()-b.getMonth(),d=now.getDate()-b.getDate();if(d<0){m--;let prev=new Date(now.getFullYear(),now.getMonth(),0);d+=prev.getDate()}if(m<0){y--;m+=12}document.getElementById('ageout').textContent='تەمەنت: '+y+' ساڵ و '+m+' مانگ و '+d+' ڕۆژ'}
+</script>
+</body></html>
