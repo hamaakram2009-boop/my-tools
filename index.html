@@ -203,4 +203,50 @@ function calcDiscount(){let p=Number(document.getElementById('original').value),
 function calcInstallment(){let total=Number(document.getElementById('debt').value),down=Number(document.getElementById('down').value)||0,months=Number(document.getElementById('months').value);if(total<=0||down<0||down>total||months<1||!Number.isInteger(months)){alert('تکایە قەرز و پێشەکی و ژمارەی مانگ بە دروستی بنووسە');return}let remain=total-down;document.getElementById('installout').textContent='ماوەی قەرز: '+remain.toLocaleString('en-US')+' دینار · قیستی مانگانە: '+(remain/months).toLocaleString('en-US',{maximumFractionDigits:0})+' دینار'}
 function calcAge(){let v=document.getElementById('birth').value;if(!v){alert('بەرواری لەدایکبوون هەڵبژێرە');return}let b=new Date(v+'T00:00:00'),now=new Date();if(b>now){alert('بەرواری لەدایکبوون نابێت لە داهاتوودا بێت');return}let y=now.getFullYear()-b.getFullYear(),m=now.getMonth()-b.getMonth(),d=now.getDate()-b.getDate();if(d<0){m--;let prev=new Date(now.getFullYear(),now.getMonth(),0);d+=prev.getDate()}if(m<0){y--;m+=12}document.getElementById('ageout').textContent='تەمەنت: '+y+' ساڵ و '+m+' مانگ و '+d+' ڕۆژ'}
 </script>
-</body></html>
+</body> <section class="active="assistant">
+
+  <h2>🤖 یاریدەدەری زیرەک</h2>
+
+  <p>سڵاو! چیت دەوێت بزانیت؟</p>
+
+  <input id="askBox" placeholder="پرسیارەکەت بنووسە...">
+
+  <button onclick="askHelper()">وەڵام بدەرەوە</button>
+
+  <div id="answerBox" class="result"></div>
+
+</section>
+
+<script>
+
+function askHelper(){
+
+  let q=document.getElementById("askBox").value.trim();
+
+  let a=document.getElementById("answerBox");
+
+  if(!q){a.innerText="تکایە پرسیارەکەت بنووسە";return;}
+
+  let t=q.toLowerCase();
+
+  if(t.includes("سڵاو")||t.includes("slaw")){
+
+    a.innerText="سڵاو! بەخێربێیت بۆ ئامرازەکانی من 💙";
+
+  }else if(t.includes("دۆلار")||t.includes("دولار")){
+
+    a.innerText="دەتوانیت ئامرازی حیسابی دۆلار لە بەشی ئامرازەکان بەکاربهێنیت.";
+
+  }else if(t.includes("qr")){
+
+    a.innerText="ئامرازی QR هەڵبژێرە و لینکەکەت داخڵ بکە.";
+
+  }else{
+
+    a.innerText="ببورە، ئەم پرسیارەم لە وەڵامە ئامادەکانمدا نییە. 💙";
+
+  }
+
+}
+
+</script></html>
