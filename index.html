@@ -6,50 +6,129 @@
 <meta name="theme-color" content="#173b2c">
 <title>ئامرازەکانی من</title>
 <style>
-  
-:r oot{--bg:#f5f7f5;--card:#fff;--ink:#17251e;--muted:#65756b;--line:#dfe8e1;--green:#176b43;--red:#c72d3b;--gold:#f4c542;--soft:#eaf4ed}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,sans-serif}
-header{color:#fff;padding:25px 18px 24px;background:linear-gradient(120deg,#b82032 0 32%,#f7f7f2 32% 66%,#176b43 66%);position:relative}
-.hero{max-width:850px;margin:auto;background:#14251ddd;border:1px solid #ffffff35;border-radius:22px;padding:20px}
-.top{display:flex;justify-content:space-between;align-items:center;gap:10px}h1{font-size:24px;margin:0}.tag{border:1px solid #ffffff55;border-radius:30px;padding:7px 12px;font-size:12px}
-header p{line-height:1.9;margin:12px 0 0;color:#edf4ee;font-size:14px}.sun{color:var(--gold)}
-.wrap{max-width:850px;margin:auto;padding:18px}.section-title{font-size:18px;margin:8px 0 14px}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
-.tool{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px;text-align:right;cursor:pointer;min-height:110px;box-shadow:0 4px 14px #173b2c0a;color:var(--ink)}
-.tool:active{transform:scale(.985)}.ico{width:40px;height:40px;border-radius:12px;background:var(--soft);display:grid;place-items:center;font-size:21px;margin-bottom:9px}
-.tool b{display:block;font-size:14px}.tool small{display:block;color:var(--muted);margin-top:5px;line-height:1.6;font-size:12px}
-.panel{display:none;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:17px;margin-top:17px;box-shadow:0 5px 18px #173b2c0a}.panel.active{display:block}
-.panel h2{font-size:18px;margin:0 0 12px}label{display:block;font-size:13px;margin:12px 0 6px;color:var(--muted)}
-input,textarea,select{width:100%;padding:12px;border:1px solid #d5e0d8;border-radius:11px;background:#fff;font:inherit;font-size:15px;color:var(--ink)}
+  :root{
+--bg:#edf8ff;
+--card:rgba(255,255,255,.78);
+--ink:#17324d;
+--muted:#6b879d;
+--line:#d5eaf7;
+--green:#168fc4;
+--red:#ef7184;
+--gold:#65c9e8;
+--soft:#e2f5ff;
+}
+*{box-sizing:border-box}
+body{
+margin:0;
+background:linear-gradient(135deg,#e9f7ff,#f8fcff,#dff3ff);
+color:var(--ink);
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,sans-serif;
+}
+header{
+color:#17324d;
+padding:25px 18px;
+background:linear-gradient(120deg,#bcecff,#ffffff,#d5f2ff);
+}
+.hero{
+max-width:850px;
+margin:auto;
+background:rgba(255,255,255,.65);
+border:1px solid #fff;
+border-radius:24px;
+padding:22px;
+box-shadow:0 10px 35px #5ca9d522;
+backdrop-filter:blur(15px);
+}
+h1{font-size:24px;margin:0}
+.tag{
+border:1px solid #a8dff5;
+border-radius:30px;
+padding:7px 12px;
+font-size:12px;
+}
+header p{line-height:1.9;margin:12px 0 0;color:#42647e}
+.wrap{max-width:850px;margin:auto;padding:18px}
+.section-title{font-size:19px;margin:8px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.tool{
+background:rgba(255,255,255,.8);
+border:1px solid #d8effb;
+border-radius:20px;
+padding:16px;
+text-align:right;
+cursor:pointer;
+min-height:112px;
+box-shadow:0 7px 22px #5ca9d515;
+color:var(--ink);
+}
+.tool:active{transform:scale(.97)}
+.ico{
+width:42px;height:42px;
+border-radius:14px;
+background:#dff4ff;
+display:grid;place-items:center;
+font-size:22px;margin-bottom:9px;
+}
+.tool b{display:block;font-size:14px}
+.tool small{display:block;color:var(--muted);margin-top:5px;line-height:1.6;font-size:12px}
+.panel{
+display:none;
+background:rgba(255,255,255,.85);
+border:1px solid #d8effb;
+border-radius:21px;
+padding:18px;
+margin-top:17px;
+box-shadow:0 8px 25px #5ca9d515;
+}
+.panel.active{display:block}
+.panel h2{font-size:18px;margin:0 0 12px}
+label{display:block;font-size:13px;margin:12px 0 6px;color:var(--muted)}
+input,textarea,select{
+width:100%;padding:12px;
+border:1px solid #cce6f4;
+border-radius:12px;
+background:#fff;
+font:inherit;font-size:15px;color:var(--ink)
+}
 textarea{min-height:90px;resize:vertical}
-button,.btn{border:0;background:var(--green);color:#fff;border-radius:11px;padding:12px 15px;font:inherit;font-weight:650;cursor:pointer;margin-top:12px;text-decoration:none;display:inline-block}
-.secondary{background:#edf2ee!important;color:var(--ink)!important}.danger{background:#fff0f0!important;color:#a52331!important}
-.row{display:flex;gap:9px;flex-wrap:wrap}.row>*{flex:1;min-width:110px}
-.result{background:#edf6ef;border:1px solid #d7e9dc;border-radius:12px;padding:13px;margin-top:13px;line-height:1.9;font-weight:650;overflow-wrap:anywhere}
-.hint{font-size:12px;color:var(--muted);line-height:1.8}.note{padding:11px;border:1px solid var(--line);border-radius:10px;margin-top:9px;display:flex;justify-content:space-between;gap:8px;align-items:center;overflow-wrap:anywhere}.note button{margin:0;padding:7px 10px;font-size:12px}
-#qrout{display:grid;place-items:center;margin-top:15px}#qrout img{max-width:220px;border:8px solid white;box-shadow:0 2px 12px #0001}
-.preview{max-width:100%;margin-top:12px;border-radius:12px}.hidden{display:none}
+button,.btn{
+border:0;
+background:linear-gradient(120deg,#42b9e5,#168fc4);
+color:#fff;border-radius:12px;
+padding:12px 15px;font:inherit;
+font-weight:650;cursor:pointer;
+margin-top:12px;text-decoration:none;
+display:inline-block;
+}
+.secondary{background:#e7f5fc!important;color:var(--ink)!important}
+.danger{background:#fff0f2!important;color:#c33b55!important}
+.row{display:flex;gap:9px;flex-wrap:wrap}
+.row>*{flex:1;min-width:110px}
+.result{
+background:#e8f7ff;
+border:1px solid #cceafa;
+border-radius:13px;
+padding:13px;margin-top:13px;
+line-height:1.9;font-weight:650;
+overflow-wrap:anywhere;
+}
+.hint{font-size:12px;color:var(--muted);line-height:1.8}
+.note{
+padding:11px;border:1px solid var(--line);
+border-radius:12px;margin-top:9px;
+display:flex;justify-content:space-between;
+gap:8px;align-items:center;overflow-wrap:anywhere;
+}
+.note button{margin:0;padding:7px 10px;font-size:12px}
+#qrout{display:grid;place-items:center;margin-top:15px}
+#qrout img{max-width:220px;border:8px solid white;box-shadow:0 2px 12px #0001}
+.preview{max-width:100%;margin-top:12px;border-radius:12px}
+.hidden{display:none}
 footer{text-align:center;color:var(--muted);font-size:12px;padding:25px}
-@media(min-width:650px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding:24px 28px}}
-
-.national-message{max-width:850px;margin:18px auto 0;padding:20px 16px;text-align:center;border-radius:18px;color:#fff;background:linear-gradient(135deg,#a91f32 0 33%,#f7f7f2 33% 66%,#176b43 66%);box-shadow:0 5px 18px #173b2c12;position:relative;overflow:hidden}
-.national-message:before{content:"";position:absolute;inset:6px;border:1px solid #ffffff80;border-radius:13px;pointer-events:none}
-.national-message h2{position:relative;margin:4px 0 9px;font-size:19px;color:#173b2c;text-shadow:0 1px 0 #ffffff80}
-.national-message p{position:relative;margin:0 0 7px;font-size:15px;font-weight:750;color:#173b2c}
-.national-message small{position:relative;color:#173b2c;font-size:12px;font-weight:650}
-.national-sun{position:relative;font-size:26px;color:#d5a900;text-shadow:0 1px 2px #fff}
-@media(min-width:650px){.national-message{margin:20px auto 0;padding:24px}.national-message h2{font-size:22px}}
-
-
-.welcome-splash{position:fixed;inset:0;z-index:99999;display:grid;place-items:center;padding:22px;background:linear-gradient(145deg,#a91f32 0 32%,#f7f7f2 32% 68%,#176b43 68%);animation:welcomeFade 1s ease 3s forwards}
-.welcome-card{width:min(100%,560px);padding:30px 20px;text-align:center;border:1px solid #ffffffa8;border-radius:22px;background:#ffffffed;box-shadow:0 16px 50px #10271935;animation:welcomePop .7s ease both}
-.welcome-sun{font-size:48px;color:#d5a900;line-height:1.2}
-.welcome-card h1{margin:12px 0;font-size:clamp(22px,5vw,30px);color:#176b43}
-.welcome-card p{margin:0 0 12px;font-size:16px;font-weight:750;color:#26352d}
-.welcome-card small{font-size:13px;color:#536258}
-@keyframes welcomePop{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
-@keyframes welcomeFade{to{opacity:0;visibility:hidden;pointer-events:none}}
-@media(prefers
+@media(min-width:650px){
+.grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.hero{padding:24px 28px}
+}
 
 </style>
 </head>
